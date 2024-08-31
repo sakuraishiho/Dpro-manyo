@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: cdp_web_manyo_task_production
   username: cdp_web_manyo_task
   password: <%= ENV['CDP_WEB_MANYO_TASK_DATABASE_PASSWORD'] %>
